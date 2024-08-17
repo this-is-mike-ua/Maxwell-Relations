@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{geometry}  % Para ajustar los márgenes
+
+\geometry{margin=0.5cm}  % Márgenes de 1 pulgada
+
+\begin{document}
+
+\renewcommand{\arraystretch}{1.3}  % Ajuste del espaciado entre filas
+\setlength{\tabcolsep}{10pt}       % Ajuste del espaciado entre columnas
+\setlength{\arrayrulewidth}{0.5pt} % Grosor de las líneas
+
+\begin{tabular}{|>{\Large\bfseries}c|>{\Large\bfseries}c|>{\Large\bfseries}c|}
+    \hline
+    & & \\
+    \LARGE{Fundamental Function} & \LARGE{Variables to Relate} & \LARGE{Maxwell Relation} \\
+    & & \\
+    \hline
+    & & \\
+    \normalfont $U(S,V,N)$ & \normalfont S,V & \normalfont $(\frac{\partial T}{\partial V})_{S,N} = -(\frac{\partial p}{\partial S})_{V,N}$ \\
+    & & \\
+    & \normalfont S,N &  \normalfont $(\frac{\partial T}{\partial V})_{S,V}=(\frac{\partial \mu}{\partial S})_{V,N}$ \\
+    & & \\
+    $dU=TdS-pdV+ \mu dN$ & \normalfont V,N & \normalfont $-(\frac{\partial p}{\partial N})_{S,V} = (\frac{\partial \mu}{\partial V})_{S,N}$ \\
+    & &  \\
+    \hline
+    & & \\
+    \normalfont $F(T,V,N)$ & \normalfont T,V & \normalfont $(\frac{\partial S}{\partial V})_{T,N}= (\frac{\partial p}{\partial T})_{V,N}$ \\
+    & & \\
+    & \normalfont  T,N & \normalfont $-(\frac{\partial S}{\partial N})_{T,V}= (\frac{\partial \mu }{\partial T})_{V,N} $ \\
+    & & \\
+    \normalfont $dF=-SdT-pdV+ \mu dN$ & \normalfont V,N & \normalfont $-(\frac{\partial p}{\partial N})_{T,V} = (\frac{\partial \mu }{\partial V})_{T,N} $ \\
+    & & \\
+    \hline
+    & & \\
+    \normalfont $H(S,p,N)$ & \normalfont S,p & \normalfont $ (\frac{\partial T}{\partial p})_{S,N}= (\frac{\partial V}{\partial S})_{p,N}$ \\
+    & & \\
+    & \normalfont S,N & \normalfont $(\frac{\partial T}{\partial N})_{S,p}= (\frac{\partial \mu }{\partial S})_{p,N}$ \\
+    & & \\
+    \normalfont $dH=TdS+Vdp + \mu dN$ & \normalfont p,N & $(\frac{\partial V}{\partial N})_{S,p}= (\frac{\partial \mu}{\partial p})_{S,N}$ \\
+    & & \\
+    \hline
+    & & \\
+    \normalfont $(S,V, \mu)$ & \normalfont S,V & \normalfont $(\frac{\partial T}{\partial V})_{S, \mu} = -(\frac{\partial p}{\partial S})_{V, \mu} $ \\
+    & & \\
+    & \normalfont S, $\mu$  & \normalfont $(\frac{\partial T }{\partial \mu})_{S,V}= -(\frac{\partial N}{\partial S})_{V,\mu}$ \\
+    & & \\
+    \normalfont $TdS-pdV-Nd \mu$ & \normalfont V,$\mu$ & \normalfont $(\frac{\partial p}{\partial \mu})_{S,V} = (\frac{\partial N}{\partial V	})_{S, \mu}$ \\    
+    & & \\    
+    \hline
+    & & \\
+    \normalfont $G(T,p,N)$ & \normalfont T,p & \normalfont $-(\frac{\partial S}{\partial p})_{T,N}= (\frac{\partial V}{\partial T})_{p,N}$ \\
+    & & \\
+    & \normalfont T,N & \normalfont $-(\frac{\partial S }{\partial N})_{T,p}=(\frac{\partial \mu}{\partial T})_{p,N}$ \\
+    & & \\
+    \normalfont $dG=-SdT+Vdp+ \mu dN$ & \normalfont p,N & \normalfont $(\frac{\partial V}{\partial N})_{T,p}= (\frac{\partial \mu}{\partial p})_{T,N}$ \\
+    & & \\
+    \hline
+    & & \\
+    \normalfont $(T,V, \mu)$ & \normalfont T,V & \normalfont $(\frac{\partial S}{\partial V})_{T, \mu} = (\frac{\partial p}{\partial T})_{V, \mu}$ \\
+    & & \\
+    & \normalfont $T, \mu$ & \normalfont $(\frac{\partial S}{\partial \mu})_{T,V}= (\frac{\partial N}{\partial T})_{V,\mu}$ \\    
+    & & \\
+    \normalfont $-SdT-pdV-Nd \mu$ & \normalfont V,$\mu$ & \normalfont $(\frac{\partial p}{\partial \mu })_{T,V}= (\frac{\partial N}{\partial V})_{T,\mu}$ \\
+    & & \\
+    \hline  
+\end{tabular}
+ 
+ 
+ \newpage
+ \begin{tabular}{|>{\Large\bfseries}c|>{\Large\bfseries}c|>{\Large\bfseries}c|}
+    \hline
+    & & \\
+    \LARGE{Fundamental Function} & \LARGE{Variables to Relate} & \LARGE{Maxwell Relation} \\
+    & & \\
+    \hline
+    & & \\
+    $(S,p, \mu)$ & \normalfont $S,p$ & $(\frac{\partial T}{\partial V})_{S, \mu}=(\frac{\partial V}{\partial S})_{p,\mu}$ \\
+    & & \\
+    & \normalfont $S, \mu$ & $(\frac{\partial T}{\partial \mu})_{S,p}= -(\frac{\partial N}{\partial S})_{p, \mu}$ \\
+    & & \\
+    $TdS+Vdp-Nd\mu$ & $p,\mu$ & $(\frac{\partial V}{\partial \mu})_{S,p}= -(\frac{\partial N}{\partial p})_{S, \mu}$ \\
+    & & \\
+    \hline
+    & & \\
+    $(T,p, \mu)$ & $S,p$ & $-(\frac{\partial S}{\partial p})_{T,\mu}= (\frac{\partial V}{\partial T})_{p,\mu}$ \\
+    & & \\
+    & $T,\mu$ & $(\frac{\partial S}{\partial \mu })_{T,p}=(\frac{\partial N}{\partial T})_{p,\mu}$ \\
+    & & \\
+    $-SdT+Vdp-Nd\mu$ & $p,\mu$ & $(\frac{\partial V}{\partial \mu})_{T,p}= -(\frac{\partial N}{\partial p})_{T,\mu}$ \\
+    & & \\
+    \hline
+\end{tabular}
+
+\LaTeX 
+  
+\end{document}
+
+%Made by J.M. Acosta for Statistical Physics class
